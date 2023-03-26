@@ -1,0 +1,15 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+int main()
+{
+	float x, F;
+	double e = 2.72;
+	cout << "Nhap x: "; cin >> x;
+
+	F = (x * x + pow(2.72, abs(x)) + sin(pow(x, 2))) / (pow(x * x + 1, 1.0 / 5.0));
+	cout << F;
+
+	return 0;
+}
