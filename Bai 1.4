@@ -1,0 +1,28 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+int main()
+{
+	double x1, x2, y1, y2;
+	cout << "Nhap x1: "; cin >> x1;
+	cout << "Nhap x2: "; cin >> x2;
+	cout << "Nhap y1: "; cin >> y1;
+	cout << "Nhap y2: "; cin >> y2;
+
+	// Tinh D
+	double D = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+	cout << "D = " << D << endl;
+
+	// Tinh M
+	double M = abs(x2 - x1) + abs(y2 - y1);
+	cout << "M = " << M << endl;
+
+	// Tinh C
+	double TuSo = x1 * x2 + y1 * y2;
+	double MauSo = sqrt(x1 * x1 + y1 * y1) * sqrt(x2 * x2 + y2 * y2);
+	double C = 1 - (TuSo / MauSo);
+	cout << "C = " << C << endl;
+
+	return 0;
+}
