@@ -1,0 +1,24 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+int main()
+{
+	double SoTien;
+	cout << "Nhap vao so tien: ";
+	cin >> SoTien;
+
+	double KM = 0;
+	if (SoTien >= 200 && SoTien < 300)
+	{
+		KM = SoTien * 0.2;
+	}
+	else if (SoTien >= 300)
+	{
+		KM = SoTien * 0.3;
+	}
+	else cout << "Khong khuyen mai!";
+	cout << "So tien khuyen mai la: " << KM << endl;
+
+	return 0;
+}
