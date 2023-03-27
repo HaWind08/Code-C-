@@ -11,19 +11,23 @@ int main()
 	// Truong hop a = 0
 	if (a == 0)
 	{
-		if (b != 0 && c != 0)
+		if (b == 0)
 		{
-			cout << "Phuong trinh co nghiem: " << -c / b;
-		}
-		else if (b == 0 && c != 0)
-		{
-			cout << "Phuong trinh vo nghiem";
+			if (c == 0)
+			{
+				cout << "Phuong trinh vo so nghiem";
+			}
+			else
+			{
+				cout << "Phuong trinh vo nghiem";
+			}
 		}
 		else
 		{
-			cout << "Phuong trinh co vo so nghiem";
+			cout << "Phuong trinh co nghiem x = " << -c / b;
 		}
 	}
+	// Truong hop a khac 0
 	else
 	{
 		delta = b * b - 4 * a * c;
