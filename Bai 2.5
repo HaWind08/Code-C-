@@ -1,0 +1,38 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+int main()
+{
+	double SoDien;
+	cout << "Nhap vao so dien tieu thu: "; cin >> SoDien;
+
+	long double SoTienPhaiTra;
+	
+	if (SoDien < 0)
+	{
+		cout << "Vui long nhap lai!";
+	}
+	else
+	{
+		if (SoDien <= 100)
+		{
+			SoTienPhaiTra = SoDien * 750;
+		}
+		else if (SoDien <= 200)
+		{
+			SoTienPhaiTra = SoDien * 1250;
+		}
+		else if (SoDien <= 300)
+		{
+			SoTienPhaiTra = SoDien * 1750;
+		}
+		else
+		{
+			SoTienPhaiTra = SoDien * 3000;
+		}
+		cout << "So tien phai tra la: " << SoTienPhaiTra;
+	}
+	
+	return 0;
+}
