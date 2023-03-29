@@ -1,0 +1,24 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+int main()
+{
+	int n;
+	cout << "Nhap n: "; cin >> n;
+	double x, S;
+	cout << "Nhap x: "; cin >> x;
+
+	if (n % 2 == 0)
+	{
+		S = 2016 * x + (pow(x, n) / pow(3, n - 1));
+	}
+	else
+	{
+		S = 0;
+	}
+	cout << "S = " << S;
+
+	
+	return 0;
+}
