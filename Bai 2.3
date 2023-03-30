@@ -4,21 +4,20 @@ using namespace std;
 
 int main()
 {
-	int n;
-	cout << "Nhap n: "; cin >> n;
-	double x, S;
-	cout << "Nhap x: "; cin >> x;
-
-	if (n % 2 == 0)
+	int x, n;
+	cin >> x >> n;
+	if (n % 2 != 0)
 	{
-		S = 2016 * x + (pow(x, n) / pow(3, n - 1));
+		cout << 0;
 	}
 	else
 	{
-		S = 0;
+		double sum = 0;
+		for (int i = 2; i <= n; i++)
+		{
+			sum = sum + (1.0 * pow(x, n) / (1.0 * pow(3, n - 1)));
+		}
+		sum += (2016 * x);
+		cout << sum;
 	}
-	cout << "S = " << S;
-
-	
-	return 0;
 }
