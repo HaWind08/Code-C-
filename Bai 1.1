@@ -1,23 +1,24 @@
 #include<iostream>
 #include<math.h>
-
 using namespace std;
 
 int main()
 {
-	int a, b; cin >> a >> b;
-	int tong = a + b;
-	int hieu = a - b;
-	long long tich = a * b;
-	float thuong = (float)a / b;
-	float chiadu = a % b;
+	int a, b;
+	cout << "Nhap a: "; cin >> a;
+	cout << "Nhap b: "; cin >> b;
 
-	cout << tong << endl;
-	cout << hieu << endl;
-	cout << tich << endl;
-	cout << thuong << endl;
-	cout << chiadu << endl;
+	int Tong = a + b;
+	int Hieu = a - b;
+	long Tich = a * b;
+	double Thuong = (double)a / b;
+	int Chiadu = a % b;
 
+	cout << "a + b = " << Tong << endl;
+	cout << "a - b = " << Hieu << endl;
+	cout << "a * b = " << Tich << endl;
+	cout << "a / b = " << Thuong << endl;
+	cout << "a % b = " << Chiadu << endl;
 	return 0;
 
 }
