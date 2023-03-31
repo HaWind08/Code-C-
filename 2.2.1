@@ -1,0 +1,37 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    float a, b, c, delta, x1, x2;
+    
+    // Bước 1: Nhập đầu vào a, b, c
+    cout << "Nhap he so a: ";
+    cin >> a;
+    cout << "Nhap he so b: ";
+    cin >> b;
+    cout << "Nhap he so c: ";
+    cin >> c;
+    
+    // Bước 2: Kiểm tra a có bằng 0 hay không
+    if (a == 0) {
+        cout << "Phuong trinh khong phai bac 2" << endl;
+    } else {
+        // Bước 3: Tính delta và giải phương trình theo delta
+        delta = b * b - 4 * a * c;
+        
+        if (delta < 0) {
+            cout << "Phuong trinh vo nghiem" << endl;
+        } else if (delta == 0) {
+            x1 = x2 = -b / (2 * a);
+            cout << "Phuong trinh co nghiem kep x = " << x1 << endl;
+        } else {
+            x1 = (-b + sqrt(delta)) / (2 * a);
+            x2 = (-b - sqrt(delta)) / (2 * a);
+            cout << "Phuong trinh co 2 nghiem phan biet: x1 = " << x1 << ", x2 = " << x2 << endl;
+        }
+    }
+    
+    return 0;
+}
