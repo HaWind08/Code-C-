@@ -1,30 +1,31 @@
 #include<iostream>
+#include<math.h>
 using namespace std;
-
-/* Nhập một số nguyên có ít hơn 5 chữ số, in ra màn hình cách đọc số nguyên đó (ví dụ:
-số 1523 đọc là: 1 ngàn 5 trăm 2 chục 3 đơn vị). Nhận xét về cách làm vừa áp dụng nếu số
-nguyên nhập vào không được giới hạn? Thử đưa ra phương án đọc số hoàn toàn? (Ví dụ: với
-số 1304 đọc là: một nghìn ba trăm linh tư?).
- Quy trình:
-B1: Khai báo và nhập số nguyên n 
-B2: Tính N, T, C, D theo công thức (chữ số hàng Nghìn, Trăm, Chục, Đơn vị) 
-B3: In kết quả ra màn hình 
-*/
 
 int main()
 {
-	int number; 
-	cout << "Nhap so(it hon 5 chu so): "; cin >> number;
+	int n;
+	cout << "Nhap n: "; cin >> n;
 
-	int nghin = number / 1000;
-	int tram = (number / 100) % 10;
-	int chuc = (number / 10) % 10;
-	int donvi = number % 10;
+	int Nghin = n / 1000;
+	int Tram = (n / 100) % 10;
+	int Chuc = (n / 10) % 10;
+	int Donvi = n % 10;
 
-	cout << nghin << " nghin ";
-	cout << tram << " tram ";
-	cout << chuc << " chuc ";
-	cout << donvi << " don vi ";
-
-	return 0;
+	if (Nghin > 0)
+	{
+		cout << Nghin << " nghin ";
+	}
+	if (Tram > 0)
+	{
+		cout << Tram << " tram ";
+	}
+	if (Chuc > 0)
+	{
+		cout << Chuc << " chuc ";
+	}
+	if (Donvi)
+	{
+		cout << Donvi << " don vi ";
+	}
 }
