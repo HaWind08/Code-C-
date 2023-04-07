@@ -1,11 +1,10 @@
 #include<iostream>
-#include<math.h>
 using namespace std;
 
 int main()
 {
 	double SoTien;
-	cout << "Nhap vao so tien: ";
+	cout << "So tien phai tra: ";
 	cin >> SoTien;
 
 	double KM = 0;
@@ -17,8 +16,10 @@ int main()
 	{
 		KM = SoTien * 0.3;
 	}
-	else cout << "Khong khuyen mai!";
-	cout << "So tien khuyen mai la: " << KM << endl;
-
+	else
+	{
+		KM = 0;
+	}
+	cout << "So tien khuyen mai: " << KM;
 	return 0;
 }
